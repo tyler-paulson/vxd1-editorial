@@ -1,0 +1,180 @@
+body {
+    margin: 40px;
+    background: rgb(240,240,240);
+    background: #efefef;
+  }
+  
+figure {
+  margin: 0;
+}
+
+  article {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+  }
+
+  
+  figcaption {
+    text-align: center;
+  }
+  
+  p {
+    line-height: 1.25;
+  }
+  
+  .lead {
+    font-size: 21px;
+    text-indent: 5ch;
+  }
+  
+  img {
+    max-width: 100%; /* DRY - Don't Repeat Yourself */
+    box-sizing: border-box;
+    padding: 32px;
+    background: white;
+  }
+  
+  .fivefonts {
+    text-align: center;
+  }
+
+  address, .timestamp {
+    text-align: center;
+  }
+
+  address a {
+    color: inherit;
+  }
+
+  .timestamp {
+    margin-top: 1rem;
+  }
+  
+  address img {
+    background: transparent;
+    padding: 0;
+  }
+  
+  figure {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  
+  figure:not(.quote) figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: gray;
+    font-family: sans-serif;
+  }
+
+  header {
+    font-family: sans-serif;
+  }
+
+  header a {
+    transition: color 200ms linear;
+  }
+
+  header a:hover {
+    color: #DB2B7B;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding-left: 0; /* Lists have this by default, overriding it */
+    margin: 0;  /* Lists have this by default, overriding it */
+    display: flex;
+    column-gap: 20px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  
+  .header {
+    background-color: rgba(0,0,0,.10);
+    background-image: url('unsplash.jpg');
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header h1 {
+    color: white;
+    background-color: black;
+    padding: 1rem 1.5rem;
+  }
+
+  .cta a {
+    color: #DB2B7B;
+  }
+
+  /* Media Queries */
+
+  @media screen and (min-width: 1150px) {
+    figure {
+      width: 120%;
+      margin-left: -10%;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    .container {
+      display: block;
+    }
+    nav {
+      margin-top: 1.75rem;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    nav ul {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 521px) {
+    .cta a {
+      background: #DB2B7B;
+      padding: 1rem;
+      color: white;
+      transition: background 200ms linear;
+      border-radius: 1rem;
+    }
+  
+    .cta a:hover {
+      background: black;
+      color: white;
+    }
+  }
+  
